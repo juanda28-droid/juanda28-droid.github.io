@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda en línea con artículos de venta optimizados para SEO y accesibilidad.">
+    <title>Tienda en Línea - Artículos de Venta</title>
+    <style>
+        /* Reset básico para consistencia entre navegadores */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            margin: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: #3498db;
+            outline: 2px solid #3498db;
+            outline-offset: 2px;
+        }
+
+        /* Sección de productos */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover,
+        .product-card:focus-within {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .product-card h3 {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+        }
+
+        .product-card .price {
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .product-card .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .product-card .btn:hover,
+        .product-card .btn:focus {
+            background-color: #2980b9;
+            outline: 2px solid #2980b9;
+            outline-offset: 2px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Estilos de accesibilidad */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        /* Media Queries para responsividad */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Optimización de rendimiento: Evitar animaciones pesadas en dispositivos móviles */
+        @media (prefers-reduced-motion: reduce) {
+            .product-card:hover,
+            .product-card:focus-within {
+                transform: none;
+                box-shadow: none;
+            }
+
+            nav a,
+            .product-card .btn {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda en Línea</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="products" aria-labelledby="products-heading">
+            <h2 id="products-heading" class="sr-only">Lista de Productos</h2>
+            <div class="products">
+                <!-- Producto 1 -->
+                <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                    <img src="images/audicular.jpg" alt="Audiculares bluetooth compatibles con distintos dispositivos" itemprop="image"> 
+                    <h3 itemprop="name">Auriculares Inalámbricos</h3>
+                    <p itemprop="description">Auriculares con cancelación de ruido y batería de 20 horas.</p>
+                    <p class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <span itemprop="priceCurrency" content="pesos">$</span>
+                        <span itemprop="price" content="999.999">999.999</span>
+                    </p>
+                    <a href="#" class="btn" itemprop="url">Ver Detalles</a>
+                </article>
+
+                <!-- Producto 2 -->
+                <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                    <img src="images/smartphone.jpg" alt="smartphone inteligente con memoria expandible" itemprop="image">
+                    <h3 itemprop="name">Smartphone XYZ</h3>
+                    <p itemprop="description">Teléfono con pantalla AMOLED y 128GB de almacenamiento.</p>
+                    <p class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <span itemprop="priceCurrency" content="pesos">$</span>
+                        <span itemprop="price" content="400.000">400.000</span>
+                    </p>
+                    <a href="#" class="btn" itemprop="url">Ver Detalles</a>
+                </article>
+
+                <!-- Producto 3 -->
+                <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                    <img src="images/laptop.jpg" alt="laptop ultraligera delgada para uso diario" itemprop="image"> 
+                    <h3 itemprop="name">Laptop Ultraligera</h3>
+                    <p itemprop="description">Laptop con procesador i7 y 16GB de RAM.</p>
+                    <p class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <span itemprop="priceCurrency" content="pesos">$</span>
+                        <span itemprop="price" content="900.000">900.000</span>
+                    </p>
+                    <a href="#" class="btn" itemprop="url">Ver Detalles</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tienda en Línea. juan david Roncancio</p> 
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
