@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Portafolio - Juan David Roncancio</title> 
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2Lw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/portafolio.css"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header --> 
+    <header class="header-parallax">
+        <div class="header-content text-white text-center py-12">
+            <!-- Botón Modo Oscuro -->
+            <button id="themeToggle" class="theme-toggle-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+          
+            <div class="flex items-center justify-center space-x-3">
+                <h1 class="text-5xl font-bold"><span>Juan David Roncancio</span></h1> 
+                <img src="images/perfil.jpeg"  alt="Foto de perfil de Juan David Roncancio" width="150">    
+            </div>
+            <h2 class="text-2xl mt-3">Ingeniero de Software</h2>
+            <a href="index.html" target="_blank" class="text-blue-400 transition-colors duration-300"><i class="fab fa-volver al CV mr-2"></i>><i class="fas fa-arrow-left mr-2"></i>Volver al CV</a> 
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto p-8">
+        <!-- Sobre Mí -->
+        <section class="card-section mb-12" data-aos="fade-up">
+            <h3 class="section-title"><i class="fas fa-user mr-3"></i>Sobre Mí</h3>
+            <p class="mt-4 text-gray-700">
+                Estudiante de ingeniería de software en la Universidad Manuela Beltrán, cursando el 10° semestre de la carrera.
+                Apasionado por el desarrollo de soluciones tecnológicas, con un enfoque en la gestión de datos, 
+                desarrollo web y análisis de negocio.
+            </p>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="card-section mb-12" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="section-title"><i class="fas fa-tools mr-3"></i>Habilidades</h3>
+            <ul class="mt-4 list-none">
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Desarrollo en Java: Creación de aplicaciones robustas y escalables.</li>
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>JavaScript: Desarrollo de interfaces dinámicas y funcionales con frameworks como React.</li>
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Gestión de bases de datos con MySQL: Diseño, implementación y optimización de bases de datos relacionales.</li>
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Business Intelligence (BI): Análisis de datos y creación de reportes con herramientas como Power BI.</li>
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Metodologías ágiles: Experiencia en Scrum para la gestión de proyectos de software.</li>
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Comprensión en redes y protocolos tecnológicos.</li>
+            </ul>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="card-section mb-12" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="section-title"><i class="fas fa-project-diagram mr-3"></i>Proyectos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                <!-- Proyecto 1: Java -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">Sistema de Gestión de Bibliotecas en Java</h4>
+                    <p class="text-gray-700 mt-2">
+                        Desarrollé una aplicación de escritorio para gestionar una biblioteca, permitiendo registrar libros, usuarios y préstamos. Implementé una arquitectura MVC para un código organizado y mantenible.
+                    </p>
+                    <p class="text-gray-600 mt-2"><strong>Tecnologías:</strong> Java, JavaScript</p>
+
+                </div>
+                <!-- Proyecto 2: JavaScript -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">Aplicación de sistema transaccional</h4>
+                    <p class="text-gray-700 mt-2">
+                        Creé una aplicación web para gestionar un sistema de ventas ecommerce de sitemas transaccionales.
+                    </p>
+                    <p class="text-gray-600 mt-2"><strong>Tecnologías:</strong> JavaScript, java, python, Mysql DB</p>
+                </div>
+                <!-- Proyecto 3: MySQL -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">Sistema de Gestión de Inventarios</h4>
+                    <p class="text-gray-700 mt-2">
+                        Diseñé e implementé un sistema de inventarios con MySQL DB, incluyendo la creación de tablas, sistema de base de datos relacionales en Mysql.
+                    </p>
+                    <p class="text-gray-600 mt-2"><strong>Tecnologías:</strong> MySQL, Apache, php</p> 
+                </div>
+                <!-- Proyecto 4: BI -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">Dashboard de Ventas con Power BI</h4>
+                    <p class="text-gray-700 mt-2">
+                        Desarrollé un dashboard interactivo para analizar datos de ventas de una empresa ficticia. Importé datos desde MySQL, creé visualizaciones y generé reportes para la toma de decisiones.
+                    </p>
+                    <p class="text-gray-600 mt-2"><strong>Tecnologías:</strong> BI, MySQL</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Botón Volver Arriba -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html> 
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Juan David Roncancio</title>
+    <!-- Tailwind CSS --> 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2Lw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Estilos personalizados --> 
+    <link rel="stylesheet" href="CV/css/styles.css">
+</head>
+<body>
+    <!-- Header -->  
+    <header class="header-parallax"> 
+        <div class="header-content text-white text-center py-12">
+            <!-- Botón Modo Oscuro -->
+            <button id="themeToggle" class="theme-toggle-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+            <img src="images/ingeniero.jpg"alt="ingeniero" class="w-40 h-40 rounded object-cover mx-auto block">          
+            <h1 class="text-5xl font-bold"><span id="typingName"></span></h1>
+            <h2 class="text-2xl mt-3">portafolio</h2>  
+        </div>
+    </header>
+ 
+ <!--foto perfil -->
+ <img src="images/damon.jpg" alt="Foto del perfil" class="w-40 h-40 rounded object-cover mx-auto block">     
+
+    <!-- Main Content --> 
+    <main class="max-w-4xl mx-auto p-8">
+
+        <!-- Sobre Mí -->
+        <section class="card-section mb-12" data-aos="fade-up">
+            <h3 class="section-title"><i class="fas fa-user mr-3"></i>Sobre Mí</h3>
+            <p class="mt-4 text-gray-700">
+                Estudiante de ingeniería de software en la Universidad Manuela Beltrán, cursando el 10° semestre de la carrera.
+            </p>
+            <img src="images/ingeniero.jpg" alt="ingeniero" class="w-20 h-20 rounded object-cover mx-auto block">  
+        </section>
+
+
+        <!-- informacion de contacto  --> 
+        <section class="card-section mb-12" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="section-title"><i class="fas fa-briefcase mr-3"></i>Informacion de contacto</h3>
+            <div class="mt-4">
+                <h4 class="text-lg font-medium text-gray-800">Estudiante universitario de pregrado</h4>
+                <p class="text-gray-700">
+                    Mi informacion de contacto:  mi numero de telefono - 3182649763 , Mi perfil de Linkedin: <li><a href="https://www.linkedin.com/in/juan-roncancio-1769a6248/" target="_blank" class="text-blue-400 transition-colors duration-300"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a></li> 
+            </div>
+            <img src="images/contacto.jpg" alt="contacto" class="w-20 h-20 rounded object-cover mx-auto block">  
+        </section>
+
+ 
+        <!-- Experiencia -->
+        <section class="card-section mb-12" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="section-title"><i class="fas fa-briefcase mr-3"></i>Experiencia</h3>
+            <div class="mt-4">
+                <h4 class="text-lg font-medium text-gray-800">Estudiante universitario de pregrado</h4>
+                <p class="text-gray-700">
+                    Actualmente cuento con conocimiento en gestión de bases de datos y metodologías del software, 
+                    uso de herramientas como mysql y distintos lenguajes como java, javascript y practicas de Bi.
+                </p>
+                <img src="images/basedatos.png" alt="SQL" class="w-20 h-20 rounded object-cover mx-auto block">   
+            </div>
+        </section>
+
+
+        <!-- Habilidades -->
+        <section class="card-section mb-12" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="section-title"><i class="fas fa-tools mr-3"></i>Habilidades</h3>
+            <ul class="mt-4 list-none">
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Conocimiento en bases de datos y metodologías de software.</li>
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Comprensión en redes y protocolos tecnológicos.</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Habilidad para planificar soluciones de problemas de información y desarrollo para proyectos futuros.</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Comprension en Scrum y metricas del software. </li>
+                <img src="images/sql.png" alt="SQL" class="w-20 h-20 rounded object-cover mx-auto block">    
+                <img src="images/java.png" alt="Foto del perfil" class="w-20 h-20 rounded object-cover mx-auto block">   
+            </ul>
+        </section>
+
+        <!-- Idiomas -->
+        <section class="card-section mb-12" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="section-title"><i class="fas fa-language mr-3"></i>idiomas</h3>
+            <p class="mt-4 text-gray-700">Español (Nativo), Ingles B1.</p>
+        </section>
+
+        <!-- Referencias -->
+        <section class="card-section mb-12" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="section-title"><i class="fas fa-address-book mr-3"></i>Referencias</h3>
+            <div class="mt-4">
+                <p class="text-gray-700"><strong>Jaime Botero</strong>, Pensionado - 3197010884</p>
+                <p class="text-gray-700"><strong>Kamila Torres</strong>, Comunicadora Social - 3193985521</p>
+            </div>
+        </section>
+    </main>
+  
+   
+    <!-- Botón Volver Arriba -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i> 
+    </button>
+
+    <!-- Scripts --> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html> 
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Actuales Mundiales - Juan David Roncancio</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2Lw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-parallax">
+        <div class="header-content text-white text-center py-12">
+            <h1 class="text-5xl font-bold">Noticias Actuales Mundiales</h1>
+            <h2 class="text-2xl mt-3">Por Juan David Roncancio</h2>
+            <a href="portafolio.html" class="text-blue-400 mt-4 inline-block transition-colors duration-300"><i class="fas fa-arrow-left mr-2"></i>Volver al Portafolio</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto p-8">
+        <!-- Noticias Actuales Mundiales -->
+        <section class="card-section mb-12" data-aos="fade-up">
+            <h3 class="section-title"><i class="fas fa-newspaper mr-3"></i>Noticias del 24 de mayo de 2025</h3>
+            <p class="mt-4 text-gray-700">Últimas noticias destacadas a nivel global:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                <!-- Noticia 1: Cambio Climático -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">Cumbre Mundial sobre Cambio Climático en París</h4>
+                    <p class="text-gray-700 mt-2">
+                        Líderes globales se reúnen para discutir nuevas metas de reducción de emisiones de carbono, con un enfoque en energías renovables.
+                    </p>
+                    <img src="images/cambio-climatico.jpg"  alt="clima" class="w-20 h-20 rounded object-cover mx-auto block">  
+                    <a href="noticia.html" class="text-blue-400 mt-2 inline-block transition-colors duration-300">Noticia numero 1 <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                  
+
+                <!-- Noticia 2: Avances en IA -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">Avances en Inteligencia Artificial</h4>
+                    <p class="text-gray-700 mt-2">
+                        Empresas tecnológicas presentan nuevos modelos de IA para mejorar la automatización en sectores como la salud y la educación.
+                    </p>
+                    <img src="images/Artificial-Intelligence.jpg"  alt="IA" class="w-20 h-20 rounded object-cover mx-auto block">   
+                    <a href="noticia.html" class="text-blue-400 mt-2 inline-block transition-colors duration-300">Noticia numero 2 <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Noticia 3: Conflictos Geopolíticos -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">Tensión en el Mar del Sur de China</h4>
+                    <p class="text-gray-700 mt-2">
+                        Nuevas disputas territoriales entre China y países vecinos escalan, afectando el comercio marítimo global.
+                    </p>
+                    <img src="images/china.jpg" alt="china" class="w-20 h-20 rounded object-cover mx-auto block">   
+                    <a href="noticia.html" class="text-blue-400 mt-2 inline-block transition-colors duration-300">Noticia numero 3 <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Noticia 4: Tecnología Espacial -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">SpaceX Lanza Nueva Misión a Marte</h4>
+                    <p class="text-gray-700 mt-2">
+                        SpaceX realiza un lanzamiento exitoso hacia Marte, llevando equipo para futuras colonias humanas.
+                    </p>
+                    <img src="images/space.jpg" alt="space" class="w-20 h-20 rounded object-cover mx-auto block"> 
+                    <a href="noticia.html" class="text-blue-400 mt-2 inline-block transition-colors duration-300">Noticia numero 4<i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-6">
+        <p>© 2025 Juan David Roncancio. Noticias Actuales.</p>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="portafolio.html" class="transition-colors duration-300"><i class="fas fa-briefcase mr-2"></i>Portafolio</a>
+            <a href="https://www.linkedin.com/in/juan-roncancio-1769a6248/" target="_blank" class="transition-colors duration-300"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+            <a href="https://github.com/desarrollo-web-1/mi-repositorio" target="_blank" class="transition-colors duration-300"><i class="fab fa-github mr-2"></i>GitHub</a>
+            <a href="https://www.instagram.com/david_cullen28/?igsh=dXk4cTlzb2JkcWpo" target="_blank" class="transition-colors duration-300"><i class="fab fa-instagram mr-2"></i>Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+</html> 
+
+<!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-6">
+        <div class="flex flex-col items-center space-y-3">
+            <div class="flex items-center space-x-4">              
+            </div>
+            <p>© 2025 Juan David Roncancio. Portafolio, 2025.</p>
+            <div class="flex space-x-4">
+                <a href="index.html" class="transition-colors duration-300"><i class="fas fa-file-alt mr-2"></i>CV</a>
+                <a href="https://www.linkedin.com/in/juan-roncancio-1769a6248/" target="_blank" class="transition-colors duration-300"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+                <a href="https://github.com/desarrollo-web-1/mi-repositorio" target="_blank" class="transition-colors duration-300"><i class="fab fa-github mr-2"></i>GitHub</a> 
+                <a href="https://www.instagram.com/david_cullen28/?igsh=dXk4cTlzb2JkcWpo" target="_blank" class="transition-colors duration-300"><i class="fab fa-instagram mr-2"></i>Instagram</a>  
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    
+
